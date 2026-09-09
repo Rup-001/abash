@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Redirect…</title>
+<script>
+var id = new URLSearchParams(location.search).get("id");
+location.replace("index.html#/listing/" + (id || "l1"));
+</script></head>
+<body><p><a href="index.html#/listing/l1">Continue</a></p></body></html>

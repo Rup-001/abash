@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abash · Demo homepage (experiment)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/demo-home.css">
+</head>
+<body>
+
+<div class="demo-tag">
+  Design experiment · not live SPA ·
+  <a href="index.html">← back to current Abash</a>
+</div>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="demo-home.html">Abash<i>.</i></a>
+      <div class="nav-actions">
+        <a class="hide-sm" href="index.html#/wishlist">Saved</a>
+        <a href="index.html#/login">Sign in</a>
+        <button type="button">বাংলা</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap hero-content">
+    <div class="hero-brand">Abash<i>.</i></div>
+    <h1 class="hero-title">Find a place that feels right.</h1>
+    <p class="hero-sub">Homes, rooms, hostels — broker-free across Dhaka.</p>
+
+    <!-- Compact how-it-works (chatty, above the fold) -->
+    <p class="how-chat" aria-label="How it works">
+      <span class="how-chat-label">Quick path</span>
+      <span class="how-pill">Search</span>
+      <span class="how-arrow" aria-hidden="true">→</span>
+      <span class="how-pill">Filter</span>
+      <span class="how-arrow" aria-hidden="true">→</span>
+      <span class="how-pill">Call</span>
+    </p>
+
+    <a class="hero-cta" href="#search">Search places <span>↓</span></a>
+  </div>
+</header>
+
+<!-- Live pulse — between hero & search card -->
+<section class="pulse" aria-label="Live activity">
+  <div class="pulse-track">
+    <span class="pulse-item"><i class="pulse-dot"></i><strong>240+</strong> active offers</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Mirpur</strong> — 12 new today</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Dhanmondi</strong> — 3 rooms just listed</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item">Broker-free across <strong>Dhaka</strong></span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Uttara</strong> — hostel beds open</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>18</strong> people searching Banani now</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><i class="pulse-dot"></i><strong>240+</strong> active offers</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Mirpur</strong> — 12 new today</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Dhanmondi</strong> — 3 rooms just listed</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item">Broker-free across <strong>Dhaka</strong></span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>Uttara</strong> — hostel beds open</span>
+    <span class="pulse-sep">·</span>
+    <span class="pulse-item"><strong>18</strong> people searching Banani now</span>
+    <span class="pulse-sep">·</span>
+  </div>
+</section>
+
+<section class="search-section" id="search">
+  <div class="wrap">
+    <div class="search-panel">
+      <div class="step">
+        <div class="step-label"><span class="step-num">1</span>Looking for</div>
+        <p class="cat-scroll-hint">← scroll for more (Hotel is here too) →</p>
+        <div class="cat-row" id="cats">
+          <button type="button" class="cat on" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg></div>
+            <div class="cat-name">Home</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="7" width="14" height="12" rx="1"/><path d="M9 7V5.5A3 3 0 0 1 15 5.5V7"/></svg></div>
+            <div class="cat-name">Room</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg></div>
+            <div class="cat-name">Hostel</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M6.2 19c.7-3.2 3-5 5.8-5s5.1 1.8 5.8 5"/></svg></div>
+            <div class="cat-name">PG</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/><path d="M4 12h16"/></svg></div>
+            <div class="cat-name">Office</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-5 8 5v10"/><path d="M9 20v-5h6v5"/></svg></div>
+            <div class="cat-name">Short Stay</div>
+          </button>
+          <button type="button" class="cat" data-cat>
+            <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20V7l9-4 9 4v13"/><path d="M8 20v-6h8v6"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg></div>
+            <div class="cat-name">Hotel</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-label"><span class="step-num">2</span>Budget</div>
+        <div class="chip-row" data-group="budget">
+          <button type="button" class="chip">Any</button>
+          <button type="button" class="chip on">৳10k – 20k</button>
+          <button type="button" class="chip">৳20k – 30k</button>
+          <button type="button" class="chip">৳30k+</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-label"><span class="step-num">3</span>Bedrooms</div>
+        <div class="bed-row" data-group="beds">
+          <button type="button" class="bed">Any</button>
+          <button type="button" class="bed">1</button>
+          <button type="button" class="bed on">2</button>
+          <button type="button" class="bed">3</button>
+          <button type="button" class="bed">4+</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-label"><span class="step-num">4</span>Furnishing</div>
+        <div class="chip-row" data-group="furnish">
+          <button type="button" class="chip">Any</button>
+          <button type="button" class="chip on">Furnished</button>
+          <button type="button" class="chip">Semi</button>
+          <button type="button" class="chip">Unfurnished</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-label"><span class="step-num">5</span>Area</div>
+        <button type="button" class="area-field">
+          <div>
+            <div class="area-field-text">Mirpur, Dhaka</div>
+            <div class="area-field-sub">Tap to choose area or sub-area</div>
+          </div>
+          <div class="area-field-arrow">›</div>
+        </button>
+      </div>
+
+      <a class="btn-search" href="index.html#/results?category=Home&amp;area=Mirpur">Search places → 4</a>
+    </div>
+  </div>
+</section>
+
+<!-- Compact Why Abash — teaser → dedicated page later -->
+<div class="wrap why-teaser-wrap">
+  <a class="why-teaser" href="index.html#/why">
+    <span class="why-teaser-kicker">Why Abash</span>
+    <span class="why-chips">
+      <span class="why-chip wine">Broker-free</span>
+      <span class="why-chip gold">Direct number</span>
+      <span class="why-chip ink">Calm search</span>
+    </span>
+    <span class="why-teaser-more">More about us <span>→</span></span>
+  </a>
+</div>
+
+<!-- 2 · Offer a place band -->
+<section class="offer-band">
+  <div class="wrap offer-band-inner">
+    <div class="offer-band-copy">
+      <div class="kicker">For owners &amp; hosts</div>
+      <h2>Place empty? List it on Abash.</h2>
+      <p>Homes, rooms, hostels, PG — people looking find you directly.</p>
+    </div>
+    <a class="offer-cta" href="index.html#/offer">Offer a place <span>→</span></a>
+  </div>
+</section>
+
+<section class="voices" aria-label="Reviews">
+  <div class="wrap voices-head">
+    <div class="kicker">From people on Abash</div>
+    <h2>Quiet finds, honest words</h2>
+    <p>Color cards in a slow river — hover to pause.</p>
+  </div>
+
+  <div class="voices-river" data-dir="ltr">
+    <div class="voices-track">
+      <!-- set A -->
+      <article class="voice tone-wine">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Found a flat in Mirpur without calling ten brokers. Spoke to the owner the same evening.</p>
+        <div class="voice-meta"><span class="voice-mark">N</span><div><strong>Nusrat</strong><span>Renter · Mirpur</span></div></div>
+      </article>
+      <article class="voice tone-cream">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Listing took a few minutes. Phone calls came from people who were actually looking.</p>
+        <div class="voice-meta"><span class="voice-mark">R</span><div><strong>Rafi</strong><span>Owner · Dhanmondi</span></div></div>
+      </article>
+      <article class="voice tone-gold">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">The area filters and budget steps made it calm — not another noisy rental site.</p>
+        <div class="voice-meta"><span class="voice-mark">S</span><div><strong>Sadia</strong><span>Renter · Mohammadpur</span></div></div>
+      </article>
+      <article class="voice tone-ink">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Shared a room near campus in two days. No middleman fee, just a clear number.</p>
+        <div class="voice-meta"><span class="voice-mark">T</span><div><strong>Tanvir</strong><span>Student · Uttara</span></div></div>
+      </article>
+      <article class="voice tone-rose">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Posted our PG vacancies once. Families messaged us directly — felt respectful.</p>
+        <div class="voice-meta"><span class="voice-mark">F</span><div><strong>Farhana</strong><span>PG host · Banani</span></div></div>
+      </article>
+      <article class="voice tone-sand">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Short stay for relatives — found a quiet place the afternoon before they landed.</p>
+        <div class="voice-meta"><span class="voice-mark">I</span><div><strong>Imran</strong><span>Guest · Gulshan</span></div></div>
+      </article>
+      <!-- set A duplicate for loop -->
+      <article class="voice tone-wine" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Found a flat in Mirpur without calling ten brokers. Spoke to the owner the same evening.</p>
+        <div class="voice-meta"><span class="voice-mark">N</span><div><strong>Nusrat</strong><span>Renter · Mirpur</span></div></div>
+      </article>
+      <article class="voice tone-cream" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Listing took a few minutes. Phone calls came from people who were actually looking.</p>
+        <div class="voice-meta"><span class="voice-mark">R</span><div><strong>Rafi</strong><span>Owner · Dhanmondi</span></div></div>
+      </article>
+      <article class="voice tone-gold" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">The area filters and budget steps made it calm — not another noisy rental site.</p>
+        <div class="voice-meta"><span class="voice-mark">S</span><div><strong>Sadia</strong><span>Renter · Mohammadpur</span></div></div>
+      </article>
+      <article class="voice tone-ink" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Shared a room near campus in two days. No middleman fee, just a clear number.</p>
+        <div class="voice-meta"><span class="voice-mark">T</span><div><strong>Tanvir</strong><span>Student · Uttara</span></div></div>
+      </article>
+      <article class="voice tone-rose" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Posted our PG vacancies once. Families messaged us directly — felt respectful.</p>
+        <div class="voice-meta"><span class="voice-mark">F</span><div><strong>Farhana</strong><span>PG host · Banani</span></div></div>
+      </article>
+      <article class="voice tone-sand" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Short stay for relatives — found a quiet place the afternoon before they landed.</p>
+        <div class="voice-meta"><span class="voice-mark">I</span><div><strong>Imran</strong><span>Guest · Gulshan</span></div></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="voices-river voices-river-rev" data-dir="rtl">
+    <div class="voices-track voices-track-rev">
+      <article class="voice tone-gold">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Office desk near Farmgate — sqft filter saved me from half the listings.</p>
+        <div class="voice-meta"><span class="voice-mark">M</span><div><strong>Mahmud</strong><span>Startup · Tejgaon</span></div></div>
+      </article>
+      <article class="voice tone-wine">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Finally a rental flow that doesn’t feel like shouting into Facebook groups.</p>
+        <div class="voice-meta"><span class="voice-mark">A</span><div><strong>Ayesha</strong><span>Renter · Bashundhara</span></div></div>
+      </article>
+      <article class="voice tone-cream">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Editor access for my brother was simple. He updates vacancies; I stay admin.</p>
+        <div class="voice-meta"><span class="voice-mark">K</span><div><strong>Karim</strong><span>Owner · Mirpur</span></div></div>
+      </article>
+      <article class="voice tone-sand">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Hostel bed found before semester. Gender + shared filters actually mattered.</p>
+        <div class="voice-meta"><span class="voice-mark">L</span><div><strong>Lamia</strong><span>Student · Motijheel</span></div></div>
+      </article>
+      <article class="voice tone-ink">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Maps + photos on the listing — I knew the lane before I called.</p>
+        <div class="voice-meta"><span class="voice-mark">H</span><div><strong>Hasan</strong><span>Renter · Wari</span></div></div>
+      </article>
+      <article class="voice tone-rose">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Broker-free isn’t a slogan here — the phone on the card is the landlord’s.</p>
+        <div class="voice-meta"><span class="voice-mark">P</span><div><strong>Priya</strong><span>Renter · Lalmatia</span></div></div>
+      </article>
+      <article class="voice tone-gold" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Office desk near Farmgate — sqft filter saved me from half the listings.</p>
+        <div class="voice-meta"><span class="voice-mark">M</span><div><strong>Mahmud</strong><span>Startup · Tejgaon</span></div></div>
+      </article>
+      <article class="voice tone-wine" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Finally a rental flow that doesn’t feel like shouting into Facebook groups.</p>
+        <div class="voice-meta"><span class="voice-mark">A</span><div><strong>Ayesha</strong><span>Renter · Bashundhara</span></div></div>
+      </article>
+      <article class="voice tone-cream" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Editor access for my brother was simple. He updates vacancies; I stay admin.</p>
+        <div class="voice-meta"><span class="voice-mark">K</span><div><strong>Karim</strong><span>Owner · Mirpur</span></div></div>
+      </article>
+      <article class="voice tone-sand" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Hostel bed found before semester. Gender + shared filters actually mattered.</p>
+        <div class="voice-meta"><span class="voice-mark">L</span><div><strong>Lamia</strong><span>Student · Motijheel</span></div></div>
+      </article>
+      <article class="voice tone-ink" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Maps + photos on the listing — I knew the lane before I called.</p>
+        <div class="voice-meta"><span class="voice-mark">H</span><div><strong>Hasan</strong><span>Renter · Wari</span></div></div>
+      </article>
+      <article class="voice tone-rose" aria-hidden="true">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-quote">Broker-free isn’t a slogan here — the phone on the card is the landlord’s.</p>
+        <div class="voice-meta"><span class="voice-mark">P</span><div><strong>Priya</strong><span>Renter · Lalmatia</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="demo-foot">
+  <div class="wrap">Design trial only · <a href="index.html">Open live Abash →</a></div>
+</footer>
+
+<script>
+(function () {
+  function exclusive(groupSel, itemSel) {
+    document.querySelectorAll(groupSel).forEach(function (group) {
+      group.addEventListener("click", function (e) {
+        var btn = e.target.closest(itemSel);
+        if (!btn || !group.contains(btn)) return;
+        group.querySelectorAll(itemSel).forEach(function (b) { b.classList.remove("on"); });
+        btn.classList.add("on");
+      });
+    });
+  }
+  exclusive("#cats", "[data-cat]");
+  exclusive("[data-group]", ".chip, .bed");
+})();
+</script>
+</body>
+</html>
